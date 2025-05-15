@@ -33,6 +33,4 @@
     // 5. Xóa phần tử khỏi mảng theo vị trí/index
     unset($danhSachTen[1]);
     duyetMang1Chieu($danhSachTen);
-
-
 ?>
