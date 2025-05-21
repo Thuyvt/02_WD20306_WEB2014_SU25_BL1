@@ -10,5 +10,12 @@
         public function __construct() {}
         
         public function __destruct() {}
+
+        public function displayProductInfor() {
+            echo "Id: " . $this->id . "<br>";
+            echo "Tên: " .$this->name . "<br>";
+            echo "Giá: " . $this->price. "<br>";
+            echo "Số lượng: " . $this->quantity. "<br>";
+        }
     }
 ?>
