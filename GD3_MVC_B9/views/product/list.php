@@ -7,12 +7,12 @@
 </head>
 <body>
     <h3>Trang Danh sách sản phẩm</h3>
-    <?php 
+    <!-- <?php 
         var_dump($danhSachProduct);
-    ?>
+    ?> -->
     <!-- Khu vực điều hướng -->
+
     <a href="?act=product-create">Trang tạo mới</a>
-    
     <table border="1">
         <thead>
             <tr>
