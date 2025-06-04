@@ -142,6 +142,8 @@
             // Kiểm tra giá trị param nhận được
             echo "ID muốn xem chi tiết là : $id<hr>";
             if ($id !== "") {
+                // lấy danh sách category
+                $danhSachCategory = $this->categoryQuery->all();
                 // lấy thông tin chi tiết bản ghi 
                 $product = $this->productQuery->find($id);
                 // hiển thị file view
