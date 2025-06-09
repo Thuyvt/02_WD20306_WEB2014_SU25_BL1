@@ -16,6 +16,7 @@
                 <th>Chuyên ngành</th>
                 <th>Mã sinh viên</th>
                 <th>Ngày sinh</th>
+                <th>Ảnh đại diện</th>
                 <th>Hành động</th>
             </tr>
         </thead>
@@ -30,6 +31,12 @@
                 <td><?= $student-> major_name;?></td>
                 <td><?= $student-> account ?></td>
                 <td><?= $student-> date_of_birth ?></td>
+                <td>
+                    <?php 
+                        if (!empty($student->avatar)): ?>               
+                            <img src="<?= BASE_ASSETS_UPLOADS. $student->avatar?>" alt="" width="100">     
+                    <?php endif;?>
+                </td>
                 <td>
                     <a href="?action=student-detail">Chi tiết</a>
                     <a href="?action=student-update">Sửa</a>
